@@ -20,10 +20,11 @@ It’s perfect for users who want to monitor their **PC, console, or other video
 
 ## 🧩 How to Use
 
-1. Launch the application (`CamControl Setup.exe`).  
-2. Select your camera or capture device.  
-3. Choose your audio input (optional).  
-4. Enjoy your live feed in fullscreen with synchronized audio.
+1. Download the Setup from [CamControl Download](http://e-development.net/CamControl/v1.0/CamControl%20Setup%201.0.0.exe)
+2. Launch the application (`CamControl Setup.exe`).  
+3. Select your camera or capture device.  
+4. Choose your audio input (optional).  
+5. Enjoy your live feed in fullscreen with synchronized audio.
 
 ---
 
