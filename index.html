@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>CamControl</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="controls">
+        <select id="cameraSelect"></select>
+        <select id="micSelect"></select>
+        <select id="resolutionSelect">
+            <option value="640x480">640×480</option>
+            <option value="1280x720" selected>1280×720 (HD)</option>
+            <option value="1920x1080">1920×1080 (Full HD)</option>
+            <option value="2560x1440">2560×1440 (QHD)</option>
+            <option value="3840x2160">3840×2160 (4K)</option>
+        </select>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+    </div>
+    <div id="control-info">
+        <div class="content">
+            <div class="control-item">
+                <span class="title">F1</span>
+                <span class="description">Hide Controller</span>
+            </div>
+            <div class="control-item">
+                <span class="title">F11</span>
+                <span class="description">Fullscreen mode</span>
+            </div>
+        </div>
+    </div>
+    <video id="video" autoplay playsinline></video>
+    <script src="script.js"></script>
+</body>
+</html>

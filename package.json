@@ -1,0 +1,47 @@
+{
+  "name": "camcontrol",
+  "version": "1.0.0",
+  "author": "E-DEVELOPMENT",
+  "description": "CamControler for CaptureCard",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "clean": "node ./scripts/clean.js",
+    "build": "npm run clean && electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^38.2.1",
+    "electron-builder": "^26.0.12",
+    "rimraf": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.example.camcontrol",
+    "productName": "CamControl",
+    "directories": {
+      "output": "dist"
+    },
+    "beforePack": "./scripts/clean.js",
+    "forceCodeSigning": false,
+    "files": [
+      "images/**/*",
+      "node_modules/**/*",
+      "index.js",
+      "preload.js",
+      "script.js",
+      "index.html",
+      "style.css",
+      "package.json"
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "assets/icon.ico",
+      "forceCodeSigning": false
+    },
+    "mac": {
+      "target": null
+    },
+    "linux": {
+      "target": null
+    }
+  }
+}
