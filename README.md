@@ -3,6 +3,8 @@
 **CamControl** is a lightweight Windows application that allows you to **preview video and audio inputs in real-time**.  
 It’s perfect for users who want to monitor their **PC, console, or other video sources** without recording, all in **fullscreen mode**.
 
+![CamControl Screenshot](images/example.png)
+
 ---
 
 ## 🚀 Features
